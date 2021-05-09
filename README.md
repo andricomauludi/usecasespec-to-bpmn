@@ -1,1 +1,3 @@
-# UseCaseSpecToBPMN
+Sistem ini berfungsi untuk mengkonversi Use Case Specification menjadi Business Process Modelling Notation (BPMN) agar user dapat lebih mudah memahami Use Case Specification dengan notasi BPMN karena menurut beberapa ahli dibandingkan dengan teks/narasi, pemodelan menggunakan notasi/grafik lebih mudah dipahami oleh mata dan otak manusia.
+
+Anggota kelompok : Intan Noer Fatimah (081811633011), Munawaroh (081811633021), M. Abdul Gani (081811633023), Rayhan Naufal (081811633048), Andrico Mauludi (081811633052), M. Raihan Nady (081811633053), Albert Samuel (081811633057).
