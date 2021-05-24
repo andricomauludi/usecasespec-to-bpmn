@@ -41,3 +41,14 @@ def createscenario(request):
            return redirect('/project_list/scenario_list')
     context = {'form':form}
     return render (request, 'scenario_list_form.html',context)
+
+def updatescenario(request,pk):
+    scenarioupdate=scenariolist.objects.get(no=pk)
+    form=scenarioform(instance=scenarioupdate)
+    if request.method == 'POST':
+       form=scenarioform(request.POST,instance=scenarioupdate)
+       if form.is_valid():
+           form.save()
+           return redirect('/project_list/scenario_list')
+    context = {'form':form}
+    return render (request, 'scenario_list_form.html',context)
