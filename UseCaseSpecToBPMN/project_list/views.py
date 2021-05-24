@@ -28,6 +28,7 @@ def updateproject(request,pk):
     context = {'form':form}
     return render (request, 'project_list_form.html',context)
 
+
 def indexscenario(request):
 	scenariodisplay=scenariolist.objects.all()
 	return render(request,'scenario_list.html',{'scenariodisplay':scenariodisplay})
@@ -52,3 +53,8 @@ def updatescenario(request,pk):
            return redirect('/project_list/scenario_list')
     context = {'form':form}
     return render (request, 'scenario_list_form.html',context)
+
+def deletescenario(request,pk):
+    scenariodel=scenariolist.objects.get(no=pk)
+    scenariodel.delete()
+    return redirect('/project_list/scenario_list')
