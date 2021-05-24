@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
-from app.models import projectlist
-from app.forms import projectform
+from app.models import projectlist, scenariolist
+from app.forms import projectform, scenarioform
 # Create your views here.
 
 def index(request):
@@ -27,3 +27,17 @@ def updateproject(request,pk):
            return redirect('/project_list')
     context = {'form':form}
     return render (request, 'project_list_form.html',context)
+
+def indexscenario(request):
+	scenariodisplay=scenariolist.objects.all()
+	return render(request,'scenario_list.html',{'scenariodisplay':scenariodisplay})
+
+def createscenario(request):
+    form=scenarioform()
+    if request.method == 'POST':
+       form=scenarioform(request.POST)
+       if form.is_valid():
+           form.save()
+           return redirect('/project_list/scenario_list')
+    context = {'form':form}
+    return render (request, 'scenario_list_form.html',context)

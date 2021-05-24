@@ -10,3 +10,14 @@ class projectlist (models.Model):
     postcondition=models.CharField(max_length=100)
     class Meta:
         db_table="projectlist"
+
+class scenariolist (models.Model):
+    no=models.AutoField(primary_key=True)
+    projectno=models.ForeignKey(projectlist, on_delete=models.CASCADE)
+    scenarioid=models.IntegerField(max_length=100)
+    scenariotype=models.CharField(max_length=100)
+    scenario=models.CharField(max_length=100)
+    prescenarioid=models.IntegerField(max_length=100)
+    postscenarioid=models.IntegerField(max_length=100)
+    class Meta:
+        db_table="scenariolist"
