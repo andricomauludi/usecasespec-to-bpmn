@@ -29,8 +29,8 @@ def updateproject(request,pk):
     return render (request, 'project_list_form.html',context)
 
 
-def indexscenario(request):
-	scenariodisplay=scenariolist.objects.all()
+def indexscenario(request,no):
+	scenariodisplay=scenariolist.objects.filter(projectno_id=no)
 	return render(request,'scenario_list.html',{'scenariodisplay':scenariodisplay})
 
 def createscenario(request):
@@ -39,7 +39,8 @@ def createscenario(request):
        form=scenarioform(request.POST)
        if form.is_valid():
            form.save()
-           return redirect('/project_list/scenario_list')
+           scenarioupdate=scenariolist.objects.latest('no')
+           return redirect('index', no=scenarioupdate.projectno_id)
     context = {'form':form}
     return render (request, 'scenario_list_form.html',context)
 
@@ -50,11 +51,12 @@ def updatescenario(request,pk):
        form=scenarioform(request.POST,instance=scenarioupdate)
        if form.is_valid():
            form.save()
-           return redirect('/project_list/scenario_list')
+           return redirect('index', no=scenarioupdate.projectno_id)
     context = {'form':form}
     return render (request, 'scenario_list_form.html',context)
 
 def deletescenario(request,pk):
     scenariodel=scenariolist.objects.get(no=pk)
+    hantu = scenariolist.objects.filter(no=pk).values_list('projectno_id', flat=True).first()
     scenariodel.delete()
-    return redirect('/project_list/scenario_list')
+    return redirect('index', no=scenariodel.projectno_id)
