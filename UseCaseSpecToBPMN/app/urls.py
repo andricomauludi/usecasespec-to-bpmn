@@ -4,5 +4,5 @@ from app import views as blogViews
 
 
 urlpatterns = [
-    path('', views.index, name="index"),
+    path('', views.index, name="home"),
 ]

@@ -13,3 +13,8 @@ class scenarioform(ModelForm):
     class Meta:
         model=scenariolist
         fields="__all__"
+
+class CreateUserForm(UserCreationForm):
+    class Meta:
+        model=User
+        fields = ['username','email','password1','password2']
