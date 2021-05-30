@@ -53,7 +53,6 @@ def createscenario(request):
 
 
 @login_required(login_url='login')
-@allowed_users(allowed_roles=[])
 def updatescenario(request,pk):
     scenarioupdate=scenariolist.objects.get(no=pk)
     form=scenarioform(instance=scenarioupdate)
@@ -66,7 +65,6 @@ def updatescenario(request,pk):
     return render (request, 'scenario_list_form.html',context)
 
 @login_required(login_url='login')
-@allowed_users(allowed_roles=[])
 def deletescenario(request,pk):
     scenariodel=scenariolist.objects.get(no=pk)
     hantu = scenariolist.objects.filter(no=pk).values_list('projectno_id', flat=True).first()
