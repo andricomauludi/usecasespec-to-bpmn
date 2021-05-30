@@ -1,4 +1,45 @@
 {% extends "app/base.html" %}
 {%block content%}
-<h1>MANTAP BELOM DIBUAT SABAR YAK</h1>
+<style>
+    .card-body{
+        background-color: #EDE8E8;
+    }
+</style>
+<!--page navigator-->
+<div class="container">
+    <nav aria-label="breadcrumb" style="background-color: #ffffff;">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/index"></a><i class="fas fa-home" style="color: #570404;"></i></li>
+          <li class="breadcrumb-item active" aria-current="page">Welcome Page</li>
+        </ol>
+      </nav>
+    <div class="card text-center">
+        <div class="card-body" style="color: #570404;">
+          <h5 class="card-title mt-5" style="color: black;">Welcome to Use Case Specification to BPMN Generator</h5>
+          <p class="card-text mb-5" style="color: #570404;">Make your BPMN more easy from your Use Case Specification</p>
+        </div>
+      </div>
+      <h1 class="mt-5" style="color: #2E1114;">What's Good?</h1>
+    <div class="row mt-5">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" style="color: black;">Project List</h5>
+              <p class="card-text" style="color: #2E1114;">Make some BPMN from your Use Case Specification</p>
+              <a href="/project_list" class="btn" style="background: #2E1114;">Go to Project List</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" style="color: black;">BPMN List</h5>
+              <p class="card-text" style="color: #2E1114;">See your BPMN result from your Use Case Specification</p>
+              <a href="/bpmn_list" class="btn" style="background: #2E1114;">Go to BPMN List</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
 {%endblock content%}
