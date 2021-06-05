@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='project',
             fields=[
-                ('no', models.IntegerField(primary_key=True, serialize=False)),
+                ('no', models.AutoField(primary_key=True, serialize=False)),
                 ('timestamp', models.DateTimeField(auto_now_add=True)),
                 ('usecasename', models.CharField(max_length=100)),
                 ('actor', models.CharField(max_length=100)),
