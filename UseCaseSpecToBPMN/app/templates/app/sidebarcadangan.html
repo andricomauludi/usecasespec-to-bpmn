@@ -1,0 +1,26 @@
+<!-- Sidebar -->
+
+<ul class="sidebar navbar-nav">
+    <li class="nav-item">
+        {{request.user}}
+        
+        {{request.user.email}}
+      </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/">
+      <i class="fas fa-fw fa-tachometer-alt"></i>
+      <span>Welcome Page</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/project_list/">
+      <i class="fas fa-fw fa-chart-area"></i>
+      <span>Project List</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/bpmn_list/">
+      <i class="fas fa-fw fa-table"></i>
+      <span>BPMN List</span></a>
+  </li>
+</ul>
