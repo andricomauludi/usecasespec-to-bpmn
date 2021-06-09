@@ -3,7 +3,7 @@
     <startEvent id="StartEvent_1y45yut" name="start">
       <outgoing>SequenceFlow_R</outgoing>
     </startEvent>
-  <task id="acsajja1" name="Membuat BPMN"><Description /></task><task id="acsajja2" name="Membuat BPMN lagi"><Description /></task></process>
+  <task id="acsajja1" name="Membuat BPMN"><Description /></task><task id="acsajja2" name="Membuat BPMN lagi"><Description /></task><task id="acsajja3" name="Membuat input"><Description /></task></process>
   <ns0:BPMNDiagram id="BpmnDiagram_1">
     <ns0:BPMNPlane bpmnElement="Process_1" id="BpmnPlane_1">
       <ns0:BPMNEdge bpmnElement="SequenceFlow_0wnb4ke" id="SequenceFlow_0wnb4ke_di">
@@ -31,10 +31,7 @@
         <ns1:waypoint x="995" y="120" />
       </ns0:BPMNEdge>
       <ns0:BPMNShape bpmnElement="StartEvent_1y45yut" id="StartEvent_1y45yut_di">
-        <ns2:Bounds height="36" width="36" x="152" y="102" />
-        <ns0:BPMNLabel>
-          <ns2:Bounds height="14" width="37" x="153" y="145" />
-        </ns0:BPMNLabel>
+        <ns2:Bounds height="36" width="36" x="50" y="102" />
       </ns0:BPMNShape>
       <ns0:BPMNShape bpmnElement="Task_1hcentk" id="Task_1hcentk_di">
         <ns2:Bounds height="80" width="100" x="240" y="80" />
@@ -57,6 +54,6 @@
       <ns0:BPMNShape bpmnElement="Activity_0b81atq" id="Activity_0b81atq_di">
         <ns2:Bounds height="80" width="100" x="840" y="80" />
       </ns0:BPMNShape>
-    <ns0:BPMNShape bpmnElement="acsajja1" id="acsajja1_di"><ns2:Bounds height="40" width="57" x="150" y="100" /></ns0:BPMNShape><ns0:BPMNShape bpmnElement="acsajja2" id="acsajja2_di"><ns2:Bounds height="40" width="57" x="300" y="100" /></ns0:BPMNShape></ns0:BPMNPlane>
+    <ns0:BPMNShape bpmnElement="acsajja1" id="acsajja1_di"><ns2:Bounds height="40" width="57" x="150" y="100" /></ns0:BPMNShape><ns0:BPMNShape bpmnElement="acsajja2" id="acsajja2_di"><ns2:Bounds height="40" width="57" x="300" y="100" /></ns0:BPMNShape><ns0:BPMNShape bpmnElement="acsajja3" id="acsajja3_di"><ns2:Bounds height="40" width="57" x="450" y="100" /></ns0:BPMNShape></ns0:BPMNPlane>
   </ns0:BPMNDiagram>
 </definitions>

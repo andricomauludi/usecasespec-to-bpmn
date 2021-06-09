@@ -11,11 +11,15 @@ class projectlist (models.Model):
     class Meta:
         db_table="projectlist"
 
+scenariotype_choice = (
+    ('task','TASK'),
+    ('conditional','Conditional'),
+)
 class scenariolist (models.Model):
     no=models.AutoField(primary_key=True)
     projectno=models.ForeignKey(projectlist, on_delete=models.CASCADE)
     scenarioid=models.IntegerField(max_length=100)
-    scenariotype=models.CharField(max_length=100)
+    scenariotype=models.CharField(max_length=100, choices=scenariotype_choice, default='task')
     scenario=models.CharField(max_length=100)
     prescenarioid=models.IntegerField(max_length=100)
     postscenarioid=models.IntegerField(max_length=100)
