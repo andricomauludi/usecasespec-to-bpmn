@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<!-- Mirrored from design.inf.usi.ch/bpmn-sketch-miner/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jun 2021 06:36:56 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Hasil Generate BPMN</title>
+    <meta name="description" content="Sketch process models with the BPMN Business Process Modeling Notation as you describe them in simple natural language">
+    <meta name="version" content="1.17.1.3215">
+    <meta name="author" content="Cesare Pautasso, Ana Ivanchikj, Ilija Gjorgjiev">
+    <link id="favicon" rel="shortcut icon" href="logo-white.png">
+    <link rel="stylesheet" href="{% static 'css\style7ea1.css' %}">
+</head>
+<body data-src="">
+    <header>
+        <section>
+            <nav>
+                
+            </nav>
+            <div style="flex:1"></div>
+        </section>
+    </header>
+    <aside class="popup">
+        <section></section>
+        <a class="close" href="#">&times;</a>
+    </aside>
+    <main>
+        <textarea style="display:none;" id="logtext" oninput="live(this.value+'\n',true);" placeholder="What&#39;s your process like today?">
+            Hasil Generate:
+            {% for getdata in scenariodisplay%}{{getdata.scenario}}
+            {% endfor %}
+        </textarea>
+        <div>
+            <svg id="restalk" style=""> </svg>
+        </div>
+        </main>
+        <div style="display: none">
+            <footer>
+                <progress id="progress" style="display: none"></progress>
+                <p id="status" style="display: none"></p>
+            </footer>
+            <textarea id="explog"></textarea>
+        </div>
+        <script src="{% static 'js\scripts7ea1.js' %}"></script> 
+    </body>
+<!-- Mirrored from design.inf.usi.ch/bpmn-sketch-miner/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jun 2021 06:36:58 GMT -->
+</html>

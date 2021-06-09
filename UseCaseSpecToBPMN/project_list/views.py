@@ -133,3 +133,7 @@ def Generate(request):
     root.set('xmlns',"http://www.omg.org/spec/BPMN/20100524/MODEL")
     tree.write(".\staticfiles\mediafiles\hasil7.bpmn")
     return render(request, 'coba.html')
+
+def coba(request,pk):
+    scenariodisplay=scenariolist.objects.filter(projectno_id=pk)
+    return render(request,'BPMN.html',{'scenariodisplay':scenariodisplay})
