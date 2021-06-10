@@ -14,4 +14,5 @@ urlpatterns = [
     path('scenario_list/scenario_delete/<str:pk>', views.deletescenario),
     path('Generate/', views.Generate),
     path('coba/<str:pk>', views.coba),
+    path('project_delete/<int:pk>', views.deleteproject),
 ]
