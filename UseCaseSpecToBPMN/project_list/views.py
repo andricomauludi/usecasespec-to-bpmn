@@ -36,6 +36,12 @@ def updateproject(request,pk):
     return render (request, 'project_list_form.html',context)
 
 @login_required(login_url='login')
+def deleteproject(request,pk):
+    projectdel=projectlist.objects.get(no=pk)
+    projectdel.delete()
+    return redirect('/project_list')
+
+@login_required(login_url='login')
 def indexscenario(request,no):
 	scenariodisplay=scenariolist.objects.filter(projectno_id=no)
 	return render(request,'scenario_list.html',{'scenariodisplay':scenariodisplay})
