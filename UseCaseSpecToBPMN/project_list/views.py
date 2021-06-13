@@ -135,5 +135,14 @@ def Generate(request):
     return render(request, 'coba.html')
 
 def coba(request,pk):
-    scenariodisplay=scenariolist.objects.filter(projectno_id=pk)
-    return render(request,'BPMN.html',{'scenariodisplay':scenariodisplay})
+    scenariodisplay=scenariolist.objects.all
+    y = 0 
+    for x in scenariodisplay():
+        if x.scenariotype == "a":
+            print("aku bodoh")
+            y= y+1
+        else:
+            break
+
+    print(y)        
+    return render(request,'BPMN.html')
