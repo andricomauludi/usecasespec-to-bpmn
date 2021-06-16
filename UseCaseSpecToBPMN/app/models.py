@@ -20,8 +20,10 @@ class scenariolist (models.Model):
     projectno=models.ForeignKey(projectlist, on_delete=models.CASCADE)
     scenarioid=models.IntegerField(max_length=100)
     scenariotype=models.CharField(max_length=100, choices=scenariotype_choice, default='task')
+    postscenarioidyes=models.IntegerField(max_length=20, null=True, blank=True)
+    postscenarioidno=models.IntegerField(max_length=20, null=True, blank=True)
     scenario=models.CharField(max_length=100)
     prescenarioid=models.IntegerField(max_length=100)
-    postscenarioid=models.IntegerField(max_length=100)
+    postscenarioid=models.IntegerField(max_length=100, null=True, blank=True)
     class Meta:
         db_table="scenariolist"
