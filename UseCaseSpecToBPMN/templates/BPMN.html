@@ -27,7 +27,9 @@
     <main>
         <textarea style="display:none;" id="logtext" oninput="live(this.value+'\n',true);" placeholder="What&#39;s your process like today?">
             Hasil Generate:
-            {% for getdata in scenariodisplay%}{{getdata.scenario}}
+            {% for getdata in ScenarioHasil%}{{getdata.scenario}}
+            {% endfor %}
+            {% for getdata in ScenarioHasil1%}{{getdata.scenario}}
             {% endfor %}
         </textarea>
         <div>
