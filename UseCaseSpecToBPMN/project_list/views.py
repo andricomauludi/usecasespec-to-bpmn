@@ -141,14 +141,24 @@ def Generate(request):
     return render(request, 'coba.html')
 
 def coba(request,pk):
-    scenariodisplay=scenariolist.objects.all
-    y = 0 
-    for x in scenariodisplay():
-        if x.scenariotype == "a":
-            print("aku bodoh")
-            y= y+1
-        else:
-            break
+    scenariodisplay=scenariolist.objects.all().filter(projectno_id=pk)
+    normal = 0
+    for x in scenariodisplay:
+        if x.scenariotype == "conditional":
+            normal= normal + 1
+    if normal > 0:
+        jumlahisi=0
+        y = 0
+        for x in scenariodisplay:
+            jumlahisi=jumlahisi+1
 
-    print(y)        
-    return render(request,'BPMN.html')
+        for x in scenariodisplay:
+            if x.scenariotype == "task":
+                y= y+1
+            else:
+                break
+        ScenarioHasil1= scenariolist.objects.filter(projectno_id=pk).exclude(postscenarioidyes=y+1)
+        ScenarioHasil= scenariolist.objects.filter(projectno_id=pk).exclude(postscenarioidno=y+1)
+        return render(request,'BPMN.html',{'ScenarioHasil':ScenarioHasil, 'ScenarioHasil1' :  ScenarioHasil1})
+    else:
+        return render(request,'BPMN.html',{'ScenarioHasil':scenariodisplay})
