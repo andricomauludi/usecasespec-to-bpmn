@@ -20,8 +20,6 @@ class Migration(migrations.Migration):
                 ('postscenarioidyes', models.IntegerField(max_length=100, null=True, blank=True)),
                 ('postscenarioidno', models.IntegerField(max_length=100, null=True, blank=True)),
                 ('scenario', models.CharField(max_length=100)),
-                ('prescenarioid', models.IntegerField(max_length=100)),
-                ('postscenarioid', models.IntegerField(max_length=100, null=True, blank=True)),
                 ('projectno', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='app.projectlist')),
             ],
             options={
