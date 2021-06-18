@@ -78,68 +78,6 @@ def deletescenario(request,pk):
     scenariodel.delete()
     return redirect('index', no=scenariodel.projectno_id)
 
-def Generate(request):
-    resultsdisplay=scenariolist.objects.all
-    for x in resultsdisplay():
-        y = str(x.scenarioid)
-        panjangx= str(x.scenarioid*150)
-        if x.scenarioid == 1:
-            filexml = ".\staticfiles\mediafiles\sbpmnawal.bpmn"
-            tree = ET.parse(filexml)
-            root = tree.getroot()
-            action = root.find(".//process")
-            doc = ET.SubElement(action, "task")
-            doc.set('id','acsajja'+y)
-            doc.set('name',x.scenario)
-            act = root.find(".//task")
-            b = ET.SubElement(act, 'Description')
-            act1 = root.find(".//{http://www.omg.org/spec/BPMN/20100524/DI}BPMNPlane")
-            doc1 = ET.SubElement(act1, "{http://www.omg.org/spec/BPMN/20100524/DI}BPMNShape")
-            doc1.set('id','acsajja'+y+'_di')
-            IDSHAPE= 'acsajja'+y+'_di'
-            print(IDSHAPE)
-            doc1.set("bpmnElement",'acsajja'+y)
-            act1 = root.find('.//{http://www.omg.org/spec/BPMN/20100524/DI}BPMNShape/[@id="%s"]' %IDSHAPE)
-            print(act1)
-            c = ET.SubElement(act1, '{http://www.omg.org/spec/DD/20100524/DC}Bounds')
-            c.set('x',panjangx)
-            c.set('y','100')
-            c.set('width','57')
-            c.set('height','40')
-            tree.write(".\staticfiles\mediafiles\hasil7.bpmn")
-        else:
-            filexml = ".\staticfiles\mediafiles\hasil7.bpmn"
-            tree = ET.parse(filexml)
-            root = tree.getroot()
-            print(root)
-            action = root.find(".//process")
-            print(action)
-            doc = ET.SubElement(action, "task")
-            doc.set('id', 'acsajja'+y)
-            idtask = 'acsajja'+y
-            print(idtask)
-            doc.set('name',x.scenario)
-            act = root.find('.//task[@id="%s"]' %idtask)
-            b = ET.SubElement(act, 'Description')
-            act1 = root.find(".//{http://www.omg.org/spec/BPMN/20100524/DI}BPMNPlane")
-            doc1 = ET.SubElement(act1, "{http://www.omg.org/spec/BPMN/20100524/DI}BPMNShape")
-            doc1.set('id', 'acsajja'+y+'_di')
-            idShape = 'acsajja'+y+'_di'
-            doc1.set("bpmnElement", 'acsajja'+y)
-            act1 = root.find('.//{http://www.omg.org/spec/BPMN/20100524/DI}BPMNShape/[@id="%s"]' %idShape)
-            c = ET.SubElement(act1, '{http://www.omg.org/spec/DD/20100524/DC}Bounds')
-            c.set('x', panjangx)
-            c.set('y', '100')
-            c.set('width', '57')
-            c.set('height', '40')
-            tree.write(".\staticfiles\mediafiles\hasil7.bpmn")
-    filexml = ".\staticfiles\mediafiles\hasil7.bpmn"
-    tree = ET.parse(filexml)
-    root = tree.getroot()
-    root.set('xmlns',"http://www.omg.org/spec/BPMN/20100524/MODEL")
-    tree.write(".\staticfiles\mediafiles\hasil7.bpmn")
-    return render(request, 'coba.html')
-
 def coba(request,pk):
     scenariodisplay=scenariolist.objects.all().filter(projectno_id=pk)
     normal = 0
@@ -157,8 +95,10 @@ def coba(request,pk):
                 y= y+1
             else:
                 break
+        Nama = projectlist.objects.filter(no=pk)
         ScenarioHasil1= scenariolist.objects.filter(projectno_id=pk).exclude(postscenarioidyes=y+1)
         ScenarioHasil= scenariolist.objects.filter(projectno_id=pk).exclude(postscenarioidno=y+1)
-        return render(request,'BPMN.html',{'ScenarioHasil':ScenarioHasil, 'ScenarioHasil1' :  ScenarioHasil1})
+        return render(request,'BPMN.html',{'ScenarioHasil':ScenarioHasil, 'ScenarioHasil1' :  ScenarioHasil1, 'Nama' : Nama})
     else:
-        return render(request,'BPMN.html',{'ScenarioHasil':scenariodisplay})
+        Nama = projectlist.objects.filter(no=pk)
+        return render(request,'BPMN.html',{'ScenarioHasil':scenariodisplay, 'Nama' : Nama})
