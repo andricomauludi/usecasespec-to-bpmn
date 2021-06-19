@@ -5,48 +5,29 @@
     <div class="container-fluid">
 
       <!-- Page Heading -->
-      <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-      <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
-          For more information about DataTables, please visit the <a target="_blank"
-              href="https://datatables.net">official DataTables documentation</a>.</p>
-
+      
       <!-- DataTales Example -->
-      <div class="card shadow mb-4">
+      <div class="card shadow mb-4 mt-5">
           <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+              <h6 class="m-0 font-weight-bold" style="color: #570404;">Add Project</h6>
           </div>
           <div class="card-body">
+            <div class="form-group form-group-default">
               <form action="" method="POST">	
                      {% csrf_token %}
-                                    <div class="form-group form-group-default">
-										<label>Use Case Name</label>
-										{{form.usecasename}}
-                                    </div>
-                                    <div class="form-group form-group-default">
-										<label>actor</label>
-										{{form.actor}}
-                                    </div>
-                                    <div class="form-group form-group-default">
-										<label>precondition</label>
-										{{form.precondition}}
-                                    </div>
-                                    <div class="form-group form-group-default">
-										<label>postcondition</label>
-										{{form.postcondition}}
-									</div>
+                    {{form.as_p}}
                 <div class="card-action">
                   <button class="btn btn-success" type="submit" value="Add">Submit</button>
                   <a href="/project_list" class="btn btn-danger ml-auto"><span class="btn-label">
                                 </span>Back</a>
                 </div>     
                </form>
+              </div>
             </div>
       </div>
       <!--card end-->
       <!-- card start-->
-      <div class="card shadow mb-4">
-        
-    </div>
+      
     <!--card scenario end-->
       <!--container fluid end-->
       {% endblock content %}
