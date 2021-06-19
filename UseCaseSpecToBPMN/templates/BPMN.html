@@ -25,8 +25,9 @@
         <a class="close" href="#">&times;</a>
     </aside>
     <main>
-        <textarea style="display:none;" id="logtext" oninput="live(this.value+'\n',true);" placeholder="What&#39;s your process like today?">
-            Hasil Generate:
+        <textarea  style="display:none;" id="logtext" oninput="live(this.value+'\n',true);" placeholder="What&#39;s your process like today?">
+            {% for getdata in Nama%}{{getdata.actor}}:
+            {% endfor %}
             {% for getdata in ScenarioHasil%}{{getdata.scenario}}
             {% endfor %}
             {% for getdata in ScenarioHasil1%}{{getdata.scenario}}
