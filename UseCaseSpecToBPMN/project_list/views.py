@@ -12,6 +12,8 @@ def index(request):
 	resultsdisplay=projectlist.objects.all()
 	return render(request,'project_list.html',{'resultsdisplay':resultsdisplay})
 
+
+
 @login_required(login_url='login')
 def createproject(request):
     form=projectform()

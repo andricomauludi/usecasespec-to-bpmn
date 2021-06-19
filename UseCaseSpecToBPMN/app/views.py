@@ -12,6 +12,10 @@ from app.forms import CreateUserForm
 def index(request):
 	return render(request,'app/index.html')
 
+def viewbpmn(request):
+	resultsdisplay=projectlist.objects.all()
+	return render(request,'bpmn_list.html',{'resultsdisplay':resultsdisplay})
+
 @unauthenticated_user
 def loginPage(request):
     
