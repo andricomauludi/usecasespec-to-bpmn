@@ -123,7 +123,7 @@ def coba(request,pk):
         if ScenarioH.postscenarioidyes==x1:
             Nama = projectlist.objects.filter(no=pk)
             ScenarioHasil1= scenariolist.objects.filter(projectno_id=pk).exclude(postscenarioidyes=x1).exclude(postscenarioidno=x2).exclude(postscenarioidyes=x2)
-            ScenarioHasil= scenariolist.objects.filter(projectno_id=pk).exclude(postscenarioidno=x1).exclude(postscenarioidno=x2).exclude(postscenarioidyes=x2)
+            ScenarioHasil= scenariolist.objects.filter(projectno_id=pk).exclude(postscenarioidno=x1).exclude(postscenarioidno=x2).exclude(postscenarioidyes=x2).exclude(scenarioid__gt=x2)
             ScenarioHasil2= scenariolist.objects.filter(projectno_id=pk).exclude(postscenarioidyes=x2).exclude(postscenarioidno=x1)
             ScenarioHasil3= scenariolist.objects.filter(projectno_id=pk).exclude(postscenarioidno=x2).exclude(postscenarioidno=x1)
             return render(request,'BPMN.html',{'ScenarioHasil':ScenarioHasil, 'ScenarioHasil1' :  ScenarioHasil1, 'Nama' : Nama 
@@ -131,7 +131,7 @@ def coba(request,pk):
             
         elif ScenarioH.postscenarioidno==x1 :
             Nama = projectlist.objects.filter(no=pk)
-            ScenarioHasil1= scenariolist.objects.filter(projectno_id=pk).exclude(postscenarioidyes=x1).exclude(postscenarioidno=x2).exclude(postscenarioidyes=x2)
+            ScenarioHasil1= scenariolist.objects.filter(projectno_id=pk).exclude(postscenarioidyes=x1).exclude(postscenarioidno=x2).exclude(postscenarioidyes=x2).exclude(scenarioid__gt=x2)
             ScenarioHasil= scenariolist.objects.filter(projectno_id=pk).exclude(postscenarioidno=x1).exclude(postscenarioidno=x2).exclude(postscenarioidyes=x2)
             ScenarioHasil2= scenariolist.objects.filter(projectno_id=pk).exclude(postscenarioidyes=x2).exclude(postscenarioidyes=x1)
             ScenarioHasil3= scenariolist.objects.filter(projectno_id=pk).exclude(postscenarioidno=x2).exclude(postscenarioidyes=x1)
