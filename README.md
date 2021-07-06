@@ -9,7 +9,7 @@ Repository ini merupakan Project milik kelompok 5 Pembangunan Perangkat Lunak Pr
   * [Sistem Pembangun](#sistem-pembangun)
 * [Petunjuk Instalasi](#petunjuk-instalasi)
 * [Penjelasan Penggunaan](#penjelasan-penggunaan)
-   *[Petunjuk Pengisian Scenario](#petunjuk-pengisian-scenario)
+   * [Petunjuk Pengisian Scenario](#petunjuk-pengisian-scenario)
 * [Informasi Lainnya](#informasi-lainnya)
   * [Anggota Proyek](#anggota-proyek)
   * [Tanggal Rilis](#tanggal-rilis)
