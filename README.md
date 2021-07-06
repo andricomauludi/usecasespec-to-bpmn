@@ -88,10 +88,10 @@ Petunjuk mengenai prosedur instalasi untuk aplikasi dilakukan pada sesi terminal
 # Penjelasan Penggunaan
 Petunjuk mengenai prosedur penggunaan aplikasi dapat dilihat pada bagian di bawah ini :
 1. Pertama, sistem akan menampilkan halaman login, dimana sebelumnya user harus melakukan sign up akun
-![sign in](https://user-images.githubusercontent.com/67141922/124630413-9c1fc100-deac-11eb-95ea-8f9a11b742c5.png)
-![sign up](https://user-images.githubusercontent.com/67141922/124630500-b063be00-deac-11eb-8009-2385dc7ecfde.png)
+![sign in](https://user-images.githubusercontent.com/67141922/124631836-f5d4bb00-dead-11eb-90a2-ad56ff638c01.png)
+![sign up](https://user-images.githubusercontent.com/67141922/124631811-eeadad00-dead-11eb-9821-7a6b4f994762.png)
 2. Setelah sign in sistem akan berada pada halaman welcome page
-![welcome page](https://user-images.githubusercontent.com/67141922/124630677-dd17d580-deac-11eb-8f44-85a8b5bd8f16.png)
+![welcome page](https://user-images.githubusercontent.com/67141922/124631752-e35a8180-dead-11eb-8e1f-108cf925b398.png)
 3. Untuk memulai project, klik menu "Project List" pada navbar
 ![projectlist](https://user-images.githubusercontent.com/78306501/124611501-b3a27e00-de9b-11eb-9f1d-14ea23f504ae.PNG)
 4. Untuk menambahkan project baru, klik "Add Project". Setelah itu melengkapi form use case yang ada
