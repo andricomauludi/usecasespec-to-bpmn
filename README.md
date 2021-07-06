@@ -117,6 +117,7 @@ User memilih project mana yang akan ditambahkan scenario, lalu mengisi ID (urut 
 Dimana ID 3 dan 4 adalah hasil dari kondisi "Form Fill Correctly" yang telah didefinisikan pada ID 3 dan hasilnya adalah task ID 4 yaitu "Systemacknowledges receipt of data on screen and by e-mail". Lalu ID 5 dan 6 adalah hasil dari kondisi "Wrong answer" yang telah didefinisikan pada ID 5 dan hasilnya adalah task ID 6 yaitu "Form is not filled out completely".
 3. Namun untuk kasus seperti berikut :
 ![kasus2](https://user-images.githubusercontent.com/78306501/124618196-ca4bd380-dea1-11eb-8592-2eddab3c3347.PNG)
+
 Perlu diberikan task "Selsai" untuk menyatukan cabang kondisi yang telah dibuat sebelum end. Berikut scenarionya :
 ![hasilkasus2](https://user-images.githubusercontent.com/78306501/124618447-fe26f900-dea1-11eb-8537-f391e07a6fe8.PNG)
 
