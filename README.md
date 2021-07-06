@@ -87,18 +87,21 @@ Petunjuk mengenai prosedur instalasi untuk aplikasi dilakukan pada sesi terminal
    ```
 # Penjelasan Penggunaan
 Petunjuk mengenai prosedur penggunaan aplikasi dapat dilihat pada bagian di bawah ini :
-1. Pada halaman awal sistem user akan diperlihatkan pada halaman login dimana user harus melakukan sign up
+1. Pertama, sistem akan menampilkan halaman login, dimana sebelumnya user harus melakukan sign up akun
+![sign in](https://user-images.githubusercontent.com/67141922/124630413-9c1fc100-deac-11eb-95ea-8f9a11b742c5.png)
+![sign up](https://user-images.githubusercontent.com/67141922/124630500-b063be00-deac-11eb-8009-2385dc7ecfde.png)
 2. Setelah sign in sistem akan berada pada halaman welcome page
-3. Untuk memulai project klik menu "Project List" pada navbar
+![welcome page](https://user-images.githubusercontent.com/67141922/124630677-dd17d580-deac-11eb-8f44-85a8b5bd8f16.png)
+3. Untuk memulai project, klik menu "Project List" pada navbar
 ![projectlist](https://user-images.githubusercontent.com/78306501/124611501-b3a27e00-de9b-11eb-9f1d-14ea23f504ae.PNG)
-4. Untuk menambahkan project klik "Add Project" dan setelah itu melengkapi form usecase yang ada
+4. Untuk menambahkan project baru, klik "Add Project". Setelah itu melengkapi form use case yang ada
 ![addproject](https://user-images.githubusercontent.com/78306501/124612579-a639c380-de9c-11eb-9257-361050735adb.PNG)
 5. Lalu untuk menambahkan scenario pada use case kembali ke halaman project list dan klik "Scenario"
 ![projectlist](https://user-images.githubusercontent.com/78306501/124611501-b3a27e00-de9b-11eb-9f1d-14ea23f504ae.PNG)
-6. Pada halaman ini user dapat menambahkan scenario sesuai data usecase yang ada
+6. Pada halaman ini user dapat memasukkan scenario sesuai data use case specification yang ada (tutorial pengisian scenario dijelaskan setelah ini)
 ![scenario](https://user-images.githubusercontent.com/78306501/124612538-9ae69800-de9c-11eb-856b-f2c34f6e03bc.PNG)
 ![addscenario](https://user-images.githubusercontent.com/78306501/124615356-60cac580-de9f-11eb-807a-75974e498e09.PNG)
-7. Lalu jika sudah kembali kembali pada halaman "Project List" dan klik "Generate" untuk melihat hasilnya
+7. Kemudian, kembali pada halaman "Project List" dan klik "Generate" untuk melihat hasilnya
 ![hasil](https://user-images.githubusercontent.com/78306501/124613729-be5e1280-de9d-11eb-9c16-722914bec570.PNG)
 
 ### Petunjuk Pengisian Scenario
