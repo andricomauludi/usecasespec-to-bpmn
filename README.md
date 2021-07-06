@@ -1,4 +1,4 @@
-# UserStoryScenToUseCaseSpec
+# UsespecToBPMN
 > Generate dari Use Case Specification to Business Process Modelling Notation (BPMN)
 
 Repository ini merupakan Project milik kelompok 5 Pembangunan Perangkat Lunak Praktikum Kelas I2, dimana Project ini bertujuan dapat melakukan Generate dari Use Case Specification ke Business Process Modelling Notation (BPMN)
@@ -12,6 +12,7 @@ Repository ini merupakan Project milik kelompok 5 Pembangunan Perangkat Lunak Pr
    * [Petunjuk Pengisian Scenario](#petunjuk-pengisian-scenario)
 * [Informasi Lainnya](#informasi-lainnya)
   * [Anggota Proyek](#anggota-proyek)
+  * [Manajemen Proyek](#manajemen-proyek)
   * [Tanggal Rilis](#tanggal-rilis)
   * [Kontak](#kontak)
 * [Lisensi](#lisensi)
@@ -19,27 +20,26 @@ Repository ini merupakan Project milik kelompok 5 Pembangunan Perangkat Lunak Pr
 <!-- TENTANG PROYEK -->
 # Deskripsi Proyek
 ### Definisi
-Proyek perangkat lunak terus berkembang dari waktu ke waktu oleh karena itu spesifikasi kebutuhan perangkat lunak juga berkembang. Salah satu cara untuk mendokumentasikan kebutuhan adalah penggunaan Use Case, yang menggambarkan interaksi seorang aktor dengan sistem yang diinginkan. Use Case kemudian harus di breakdown untuk menjelaskan bagaimana sistem ini bekerja (Muchtar, et al. 2011), inilah yang kemudian disebut Use Case Specification. Dalam laporan ini kami menjelaskan pembuatan model proses bisnis dalam BPMN dari Use Case Specification dengan mengurutkan Scenario ID-nya. Berikut adalah penjelasan dari masing-masing artefak yang dilibatkan dalam aplikasi ini. 
+Proses bisnis saat ini semakin mengutamakan perangkat lunak untuk mendukung aktivitasnya terutama dalam pemodelan proses bisnis. Pemodelan ini bertujuan untuk memberikan pemahaman yang lebih baik tentang proses bisnis di perusahaan. Salah satu cara untuk memodelkan kebutuhan suatu proses adalah penggunaan Use Case, yang menggambarkan interaksi aktor dengan sistem yang diinginkan. Use Case kemudian harus di breakdown untuk menjelaskan bagaimana sistem ini bekerja (Muchtar, et al. 2011), inilah yang kemudian disebut Use Case Specification. Namun, muncul masalah mengenai perbedaan pemahaman antara orang TI dan orang bisnis. Faktanya, tidak semua pelaku bisnis dapat memahami artifak sistem informasi seperti use case yang ditujukan untuk para pelaku IT, begitu juga sebaliknya. Para pelaku bisnis yang non-IT membutuhkan visualisasi yang lebih mudah dalam menganalisis suatu proses dari berbagai artefak perangkat lunak, yaitu dalam bentuk notasi.
+Dalam laporan ini kami menjelaskan pembuatan model proses bisnis dalam BPMN dari Use Case Specification dengan mengurutkan Scenario ID-nya. Berikut adalah penjelasan singkat dari masing-masing artefak yang dilibatkan dalam aplikasi ini. 
 1. *Use Case Specification* merupakan deskripsi singkat tentang langkah-langkah yang diperlukan untuk menggambarkan use case, lalu langkah-langkahnya dibuat untuk menambahkan lebih detail yang disebut dengan use case specification.
 2. BPMN adalah pendekatan berorientasi grafik yang memodelkan aktivitas proses bisnis berdasarkan flow-nya. 
 
 Secara garis besar, komponen pembentuk dari *Use Case Specification* sebagai *input* yang dihasilkan terbentuk melalui komponen input, yaitu :
 1. Use Case Name : Nama Use Case berdasarkan keperluan aktor.
-2. Trigger : Tujuan aktor melakukan aktivitas tersebut dalam sistem.
-3. Main Scenario : Menunjukkan ketika aktor melakukan aktivitas, sistem harus meresponsnya dengan sesuai. Skenario utama menjelaskan successful case dari Use Case. 
-4. Pre-condition : Keadaan sistem yang diperlukan sebelum use case specification di mulai.
-5. Extension : Pengecualian dan kasus yang unsuccessful dapat ditambahkan di bagian ekstensions, disebut juga dengan Exceptional Scenario.
-6. Post-condition : Keadaan sistem yang diperlukan setelah use case specification di akhiri.
+2. Actor : Pelaku dalam proses.
+3. Pre-condition : Keadaan sistem yang diperlukan sebelum use case specification di mulai.
+4. Post-condition : Keadaan sistem yang diperlukan setelah use case specification di akhiri.
+5. Main Scenario (task) : Menunjukkan ketika aktor melakukan aktivitas, sistem harus meresponsnya dengan sesuai. Skenario utama menjelaskan successful case dari Use Case.
+6. Extension Scenario (conditional) : Pengecualian dan kasus yang unsuccessful dapat ditambahkan di bagian ekstensions, disebut juga dengan Exceptional Scenario.
 
 Secara garis besar, komponen pembentuk dari BPMN sebagai *output* yang dihasilkan terbentuk melalui komponen input, yaitu :
-1. Event : Event adalah sesuatu yang "terjadi" selama jalannya Proses. Mempengaruhi aliran dari model dan bisanya memiliki penyebab (trigger) atau dampak (postcondition). Event digambarkan dalam lingkaran terbuka untuk membedakan fungsinya. Ada dua jenis event yang digunakan, berdasarkan pengaruh aliran proses: Start dan End
-2. Activity : Aktivitas adalah sebuah istilah umum untuk menampilkan sebuah proses bisnis, suatu task berhubungan dengan task yang lain untuk menjelaskan urutan.
-3. Gateaway : Gateway digunakan untuk mengambil dua atau lebih jalur alternatif untuk sebuah proses / task.
-4. Data Object : Data Object memberikan informasi tentang kegiatan apa yang perlu diadakan dan atau apa yang mereka hasilkan.
-5. Data Stores : Merupakan kumpulan data yang disimpan dengan cara tertentu di dalam sistem. Data Store pada model proses bisnis berkaitan dengan penyimpanan secara manual seperti buku alamat, file folder, agenda dan lainya. 
-6. Sequence flow : Sebuah Arus Urutan digunakan untuk menunjukkan urutan kegiatan yang akan dilakukan dalam proses
-7. Association : Digunakan untuk menghubungkan informasi dan Artefak dengan elemen BPMN grafis. Semua mata panah pada Asosiasi menunjukkan arah aliran (misalnya: data)
-8. Pool : Tempat dari sebuah proses tunggal, dimana urutan arus tidak boleh melebihi batas dari pool.
+1. Actor : Actor dari inputan use case specification akan ditampilkan pada pool BPMN
+2. Event : Event adalah sesuatu yang "terjadi" selama jalannya Proses. Mempengaruhi aliran dari model dan bisanya memiliki penyebab (trigger) atau dampak (postcondition). Event digambarkan dalam lingkaran terbuka untuk membedakan fungsinya. Ada dua jenis event yang digunakan, berdasarkan pengaruh aliran proses: Start dan End
+3. Activity : Aktivitas adalah sebuah istilah umum untuk menampilkan sebuah proses bisnis, suatu inputan task berhubungan dengan task yang lain untuk menjelaskan urutan dari activity.
+4. Gateway : Gateway digunakan untuk mengambil dua atau lebih jalur alternatif untuk sebuah proses / task. Gateway akan muncul saat memilih Extension  Scenario (conditional)
+5. Sequence flow : Sebuah Arus Urutan digunakan untuk menunjukkan urutan kegiatan yang akan dilakukan dalam proses
+6. Pool : Tempat dari sebuah proses tunggal, dimana urutan arus tidak boleh melebihi batas dari pool.
 
 ### Sistem Pembangun
 Aplikasi Use Case Specification Generator dibangun dengan memanfaatkan *software*, *framework*, dan beberapa bahasa pemrograman, diantaranya adalah sebagai berikut :
@@ -132,6 +132,10 @@ Anggota pada proyek pengerjaan aplikasi *Use Case Specification Generator* terdi
 5. Andrico Mauludi Junianto
 6. Muhammad Raihan Nady K.
 7. Albert Samuel Pangihutan
+
+### Manajemen Proyek
+Dalam pelaksanaan proyek, digunakan pengelolaan proyek berbasis Agile yaitu SCRUM. Berikut adalah link pengaturan Sprint Board :
+[Trello Board](https://trello.com/b/yajsJQGM/usepec-to-bpmn)
 
 ### Tanggal Rilis 
 Tanggal 9 Juli 2021
