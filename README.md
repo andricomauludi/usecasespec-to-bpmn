@@ -44,7 +44,7 @@ Aplikasi Use Case Specification Generator dibangun dengan memanfaatkan *software
 Petunjuk mengenai prosedur instalasi untuk aplikasi dilakukan pada sesi terminal, berikut prosedur yang dapat dilakukan :
 1. Lakukan *clone* pada repositori
    ```sh
-   git clone https://github.com/AgileRE-2021/CDG.git
+   git clone https://github.com/AgileRE-2021/UseCaseSpecToBPMN.git
    ```
 2. Membuat *virtual environment* pada *python*
    ```sh
