@@ -79,7 +79,7 @@ Petunjuk mengenai prosedur penggunaan aplikasi dapat dilihat pada bagian di bawa
 1. Pada halaman awal sistem user akan diperlihatkan pada halaman login dimana user harus melakukan sign up
 2. Setelah sign in sistem akan berada pada halaman welcome page
 3. Untuk memulai project klik menu "Project List" pada navbar
-<img src="https://github.com/AgileRE-2021/UseCaseSpecToBPMN/blob/master/readme_asset/projectlist.PNG">
+<img src="https://github.com/AgileRE-2021/UseCaseSpecToBPMN/blob/master/assets_readme/projectlist.PNG">
 4. 
 
 # Informasi Lainnya
