@@ -134,8 +134,9 @@ Anggota pada proyek pengerjaan aplikasi *Use Case Specification Generator* terdi
 7. Albert Samuel Pangihutan
 
 ### Manajemen Proyek
-Dalam pelaksanaan proyek, digunakan pengelolaan proyek berbasis Agile yaitu SCRUM. Berikut adalah link pengaturan Sprint Board :
-[Trello Board](https://trello.com/b/yajsJQGM/usepec-to-bpmn)
+Dalam pelaksanaan proyek, digunakan pengelolaan proyek berbasis Agile yaitu SCRUM.
+Link pengaturan Sprint Board : [Trello Board](https://trello.com/b/yajsJQGM/usepec-to-bpmn)
+Link hasil tester dataset : [Dataset Result](https://drive.google.com/drive/folders/1vQ7bQzx90jgwB_a5gFde0dCuJiyoTwh9?usp=sharing)
 
 ### Tanggal Rilis 
 Tanggal 9 Juli 2021
