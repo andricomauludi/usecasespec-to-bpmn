@@ -9,6 +9,7 @@ Repository ini merupakan Project milik kelompok 5 Pembangunan Perangkat Lunak Pr
   * [Sistem Pembangun](#sistem-pembangun)
 * [Petunjuk Instalasi](#petunjuk-instalasi)
 * [Penjelasan Penggunaan](#penjelasan-penggunaan)
+   *[Petunjuk Pengisian Scenario](#petunjuk-pengisian-scenario)
 * [Informasi Lainnya](#informasi-lainnya)
   * [Anggota Proyek](#anggota-proyek)
   * [Tanggal Rilis](#tanggal-rilis)
@@ -22,13 +23,23 @@ Proyek perangkat lunak terus berkembang dari waktu ke waktu oleh karena itu spes
 1. *Use Case Specification* merupakan deskripsi singkat tentang langkah-langkah yang diperlukan untuk menggambarkan use case, lalu langkah-langkahnya dibuat untuk menambahkan lebih detail yang disebut dengan use case specification.
 2. BPMN adalah pendekatan berorientasi grafik yang memodelkan aktivitas proses bisnis berdasarkan flow-nya. 
 
-Secara garis besar, komponen pembentuk dari *Use Case Specification* sebagai *output* yang dihasilkan terbentuk melalui komponen input, yaitu :
+Secara garis besar, komponen pembentuk dari *Use Case Specification* sebagai *input* yang dihasilkan terbentuk melalui komponen input, yaitu :
 1. Use Case Name : Nama Use Case berdasarkan keperluan aktor.
 2. Trigger : Tujuan aktor melakukan aktivitas tersebut dalam sistem.
 3. Main Scenario : Menunjukkan ketika aktor melakukan aktivitas, sistem harus meresponsnya dengan sesuai. Skenario utama menjelaskan successful case dari Use Case. 
 4. Pre-condition : Keadaan sistem yang diperlukan sebelum use case specification di mulai.
 5. Extension : Pengecualian dan kasus yang unsuccessful dapat ditambahkan di bagian ekstensions, disebut juga dengan Exceptional Scenario.
 6. Post-condition : Keadaan sistem yang diperlukan setelah use case specification di akhiri.
+
+Secara garis besar, komponen pembentuk dari BPMN sebagai *output* yang dihasilkan terbentuk melalui komponen input, yaitu :
+1. Event : Event adalah sesuatu yang "terjadi" selama jalannya Proses. Mempengaruhi aliran dari model dan bisanya memiliki penyebab (trigger) atau dampak (postcondition). Event digambarkan dalam lingkaran terbuka untuk membedakan fungsinya. Ada dua jenis event yang digunakan, berdasarkan pengaruh aliran proses: Start dan End
+2. Activity : Aktivitas adalah sebuah istilah umum untuk menampilkan sebuah proses bisnis, suatu task berhubungan dengan task yang lain untuk menjelaskan urutan.
+3. Gateaway : Gateway digunakan untuk mengambil dua atau lebih jalur alternatif untuk sebuah proses / task.
+4. Data Object : Data Object memberikan informasi tentang kegiatan apa yang perlu diadakan dan atau apa yang mereka hasilkan.
+5. Data Stores : Merupakan kumpulan data yang disimpan dengan cara tertentu di dalam sistem. Data Store pada model proses bisnis berkaitan dengan penyimpanan secara manual seperti buku alamat, file folder, agenda dan lainya. 
+6. Sequence flow : Sebuah Arus Urutan digunakan untuk menunjukkan urutan kegiatan yang akan dilakukan dalam proses
+7. Association : Digunakan untuk menghubungkan informasi dan Artefak dengan elemen BPMN grafis. Semua mata panah pada Asosiasi menunjukkan arah aliran (misalnya: data)
+8. Pool : Tempat dari sebuah proses tunggal, dimana urutan arus tidak boleh melebihi batas dari pool.
 
 ### Sistem Pembangun
 Aplikasi Use Case Specification Generator dibangun dengan memanfaatkan *software*, *framework*, dan beberapa bahasa pemrograman, diantaranya adalah sebagai berikut :
@@ -86,14 +97,29 @@ Petunjuk mengenai prosedur penggunaan aplikasi dapat dilihat pada bagian di bawa
 ![projectlist](https://user-images.githubusercontent.com/78306501/124611501-b3a27e00-de9b-11eb-9f1d-14ea23f504ae.PNG)
 6. Pada halaman ini user dapat menambahkan scenario sesuai data usecase yang ada
 ![scenario](https://user-images.githubusercontent.com/78306501/124612538-9ae69800-de9c-11eb-856b-f2c34f6e03bc.PNG)
+![addscenario](https://user-images.githubusercontent.com/78306501/124615356-60cac580-de9f-11eb-807a-75974e498e09.PNG)
 7. Lalu jika sudah kembali kembali pada halaman "Project List" dan klik "Generate" untuk melihat hasilnya
 ![hasil](https://user-images.githubusercontent.com/78306501/124613729-be5e1280-de9d-11eb-9c16-722914bec570.PNG)
 
 ### Petunjuk Pengisian Scenario
-1. 
-2. 
-3. 
-dst....
+Sebagai contoh akan digunakan project "Student Applies For Thesis"
+![scenario](https://user-images.githubusercontent.com/78306501/124612538-9ae69800-de9c-11eb-856b-f2c34f6e03bc.PNG)
+Dimana hasil generatenya adalah seperti berikut :
+![hasil](https://user-images.githubusercontent.com/78306501/124613729-be5e1280-de9d-11eb-9c16-722914bec570.PNG)
+
+1. Untuk membuat task user dapat mengisi form scenario seperti dibawah
+![task](https://user-images.githubusercontent.com/78306501/124615703-b8693100-de9f-11eb-88c0-c2317be2a09a.PNG)
+User memilih project mana yang akan ditambahkan scenario, lalu mengisi ID (urut yang dimulai dari 1), lalu memilih scenario type "TASK" pada form "scenariotype", tidak mengisi form "postscenarioidyes" dan "postscenarioidno", dan terakhir mengisi deskripsi task.
+2. Untuk membuat conditional
+![conditional](https://user-images.githubusercontent.com/78306501/124616666-7a204180-dea0-11eb-93fc-14485f602f3c.PNG)
+User memilih project mana yang akan ditambahkan scenario, lalu mengisi ID (urut yang dimulai dari 1), lalu memilih scenario type "CONDITIONAL" pada form "scenariotype", tidak mengisi form "postscenarioidyes" dan "postscenarioidno", dan terakhir mengisi deskripsi conditional dengan kalimat tanya. Namun task setelahnya dapat dibuat dengan pengisian form seperti berikut:
+![conditional2](https://user-images.githubusercontent.com/78306501/124617238-f87ce380-dea0-11eb-839e-377b0822c472.png)
+Dimana ID 3 dan 4 adalah hasil dari kondisi "Form Fill Correctly" yang telah didefinisikan pada ID 3 dan hasilnya adalah task ID 4 yaitu "Systemacknowledges receipt of data on screen and by e-mail". Lalu ID 5 dan 6 adalah hasil dari kondisi "Wrong answer" yang telah didefinisikan pada ID 5 dan hasilnya adalah task ID 6 yaitu "Form is not filled out completely".
+3. Namun untuk kasus seperti berikut :
+![kasus2](https://user-images.githubusercontent.com/78306501/124618196-ca4bd380-dea1-11eb-8592-2eddab3c3347.PNG)
+Perlu diberikan task "Selsai" untuk menyatukan cabang kondisi yang telah dibuat sebelum end. Berikut scenarionya :
+![hasilkasus2](https://user-images.githubusercontent.com/78306501/124618447-fe26f900-dea1-11eb-8537-f391e07a6fe8.PNG)
+
 
 # Informasi Lainnya
 ### Anggota Proyek
