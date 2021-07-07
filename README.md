@@ -98,7 +98,7 @@ Petunjuk mengenai prosedur instalasi untuk aplikasi dilakukan pada sesi terminal
 # Penjelasan Penggunaan
 Petunjuk mengenai prosedur penggunaan aplikasi dapat dilihat pada bagian di bawah ini :
 1. Pertama, sistem akan menampilkan halaman login, dimana sebelumnya user harus melakukan sign up akun
-![sign in](https://user-images.githubusercontent.com/67141922/124631836-f5d4bb00-dead-11eb-90a2-ad56ff638c01.png)
+![sign in](https://user-images.githubusercontent.com/67141922/124756258-76e78d00-df56-11eb-97e2-5972b7de97d9.png)
 ![sign up](https://user-images.githubusercontent.com/67141922/124631811-eeadad00-dead-11eb-9821-7a6b4f994762.png)
 2. Setelah sign in sistem akan berada pada halaman welcome page
 ![welcome page](https://user-images.githubusercontent.com/67141922/124631752-e35a8180-dead-11eb-8e1f-108cf925b398.png)
