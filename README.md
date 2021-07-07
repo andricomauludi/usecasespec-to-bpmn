@@ -105,7 +105,7 @@ Petunjuk mengenai prosedur penggunaan aplikasi dapat dilihat pada bagian di bawa
 3. Untuk memulai project, klik menu "Project List" pada navbar. Disini akan ditampilkan daftar project use case specification yang telah dibuat
 ![projectlist](https://user-images.githubusercontent.com/67141922/124757145-80252980-df57-11eb-9b14-25ac62e56631.png)
 4.	Untuk menambahkan project baru, klik "Add Project". Setelah itu melengkapi form use case yang ada
-![addproject](https://user-images.githubusercontent.com/67141922/124757216-8adfbe80-df57-11eb-8ab2-b8aefc7ae534.png)
+![addproject](https://user-images.githubusercontent.com/67141922/124761209-c1b7d380-df5b-11eb-8fdf-7e4107987ddc.png)
 5.	Lalu untuk menambahkan scenario pada use case kembali ke halaman Project List dan klik "Scenario"
 ![projectlist](https://user-images.githubusercontent.com/67141922/124757246-916e3600-df57-11eb-910c-f94dccf429df.png)
 6.	Pada halaman ini user dapat memasukkan scenario sesuai data use case specification (tutorial pengisian skenario dijelaskan di sub bab selanjutnya)
@@ -132,7 +132,7 @@ Sebelum masuk ke tutorial, berikut hal-hal yang perlu diperhatikan pada tabel pe
 
 1.	User memilih nama project yang akan ditambahkan scenario.
 2.	Isi ID scenario (urut dimulai dari 1), lalu memilih scenario type "TASK" pada form "scenariotype".
-![scenario task](https://user-images.githubusercontent.com/67141922/124758831-2cb3db00-df59-11eb-8527-1b7380c8f23f.png)
+![scenario task](https://user-images.githubusercontent.com/67141922/124761258-ce3c2c00-df5b-11eb-9c5c-820de2d263c5.png)
 3.	Pada ID scenario 1 tidak perlu mengisi "postscenarioidyes" dan "postscenarioidno", langsung isikan deskripsi scenario “memilih menu edit”
 ![1](https://user-images.githubusercontent.com/67141922/124759356-c24f6a80-df59-11eb-9339-a159df269cad.png)
 4.	ID scenario 2 serupa dengan ID scenario 1, isi scenario dengan “sistem menampilkan field untuk mengganti profile”
@@ -140,9 +140,10 @@ Sebelum masuk ke tutorial, berikut hal-hal yang perlu diperhatikan pada tabel pe
 5.	ID scenario 3 serupa dengan ID scenario 1, isi scenario dengan “mengganti profile yang diinginkan”
 ![3](https://user-images.githubusercontent.com/67141922/124759387-c8dde200-df59-11eb-8933-09ad74326b4c.png)
 6.	Pada data use case specification, terdapat tanda bahwa scenario ID scenario 3 memiliki alternative flows, maka dari itu, sebelum lanjut ke langkah selanjutnya kita perlu mendefinisikan alternative flows yang dilalui.
+
 ![3 1](https://user-images.githubusercontent.com/67141922/124759398-caa7a580-df59-11eb-81f0-2074703e92fc.png)
-7.	Untuk membuat conditional scenario, kita hanya perlu mengubah scenariotpe pada form
-![3 2](https://user-images.githubusercontent.com/67141922/124759410-cda29600-df59-11eb-8d31-e56b01a16874.png)
+7.	Untuk membuat conditional scenario, kita hanya perlu memilih "Conditional" scenariotype pada form
+![3 2](https://user-images.githubusercontent.com/67141922/124761250-cd0aff00-df5b-11eb-89be-5ed57c3f6a1a.png)
 8.	Sehingga, ID scenario 4 adalah conditional scenario berupa kalimat pertanyan "Apakah Actor memasukkan field yang diperlukan dengan tepat?"
 ![4](https://user-images.githubusercontent.com/67141922/124759435-d2ffe080-df59-11eb-96f8-e4d47b773890.png)
 9.	Setelah conditional scenario, pasti ada dua cabang jalur scenario yaitu jawaban "Yes" atau "No".
@@ -157,7 +158,8 @@ Sebelum masuk ke tutorial, berikut hal-hal yang perlu diperhatikan pada tabel pe
 14.	ID scenario 9 kembali melanjutkan scenario dari jawaban "No", yaitu “sistem akan mempersilahkan aktor untuk mengisi field dengan tepat”
 ![9](https://user-images.githubusercontent.com/67141922/124759480-de530c00-df59-11eb-8120-735bf25130bd.png)
 15.	Sebelum proses diakhiri dengan end event, dalam BPMN perlu menyediakan satu task penghubung antara kedua jalur "Yes" dan "No", yaitu ID scenario 10 yang menyatakan “End of the process”
-16.	Hasil generatenya adalah seperti berikut
+![10](https://user-images.githubusercontent.com/67141922/124760467-faa37880-df5a-11eb-9479-0fc0a3153212.png)
+17.	Hasil generatenya adalah seperti berikut
 ![bpmn2](https://user-images.githubusercontent.com/67141922/124759515-e743dd80-df59-11eb-8a18-38fcfca71ec8.png)
 
 
