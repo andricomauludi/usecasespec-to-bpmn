@@ -99,20 +99,25 @@ Petunjuk mengenai prosedur instalasi untuk aplikasi dilakukan pada sesi terminal
 Petunjuk mengenai prosedur penggunaan aplikasi dapat dilihat pada bagian di bawah ini :
 1. Pertama, sistem akan menampilkan halaman login, dimana sebelumnya user harus melakukan sign up akun
 ![sign in](https://user-images.githubusercontent.com/67141922/124756258-76e78d00-df56-11eb-97e2-5972b7de97d9.png)
-![sign up](https://user-images.githubusercontent.com/67141922/124631811-eeadad00-dead-11eb-9821-7a6b4f994762.png)
-2. Setelah sign in sistem akan berada pada halaman welcome page
-![welcome page](https://user-images.githubusercontent.com/67141922/124631752-e35a8180-dead-11eb-8e1f-108cf925b398.png)
-3. Untuk memulai project, klik menu "Project List" pada navbar
-![projectlist](https://user-images.githubusercontent.com/78306501/124611501-b3a27e00-de9b-11eb-9f1d-14ea23f504ae.PNG)
-4. Untuk menambahkan project baru, klik "Add Project". Setelah itu melengkapi form use case yang ada
-![addproject](https://user-images.githubusercontent.com/78306501/124612579-a639c380-de9c-11eb-9257-361050735adb.PNG)
-5. Lalu untuk menambahkan scenario pada use case kembali ke halaman project list dan klik "Scenario"
-![projectlist](https://user-images.githubusercontent.com/78306501/124611501-b3a27e00-de9b-11eb-9f1d-14ea23f504ae.PNG)
-6. Pada halaman ini user dapat memasukkan scenario sesuai data use case specification yang ada (tutorial pengisian scenario dijelaskan setelah ini)
-![scenario](https://user-images.githubusercontent.com/78306501/124612538-9ae69800-de9c-11eb-856b-f2c34f6e03bc.PNG)
-![addscenario](https://user-images.githubusercontent.com/78306501/124615356-60cac580-de9f-11eb-807a-75974e498e09.PNG)
+![sign up](https://user-images.githubusercontent.com/67141922/124757077-6aafff80-df57-11eb-8666-3b6f0cdfb9d4.png)
+2. Setelah log in sistem akan berada pada halaman Welcome Page
+![welcome page](https://user-images.githubusercontent.com/67141922/124757109-769bc180-df57-11eb-81b2-c332ddbc71b2.png)
+3. Untuk memulai project, klik menu "Project List" pada navbar. Disini akan ditampilkan daftar project use case specification yang telah dibuat
+![projectlist](https://user-images.githubusercontent.com/67141922/124757145-80252980-df57-11eb-9b14-25ac62e56631.png)
+4.	Untuk menambahkan project baru, klik "Add Project". Setelah itu melengkapi form use case yang ada
+![addproject](https://user-images.githubusercontent.com/67141922/124757216-8adfbe80-df57-11eb-8ab2-b8aefc7ae534.png)
+5.	Lalu untuk menambahkan scenario pada use case kembali ke halaman Project List dan klik "Scenario"
+![projectlist](https://user-images.githubusercontent.com/67141922/124757246-916e3600-df57-11eb-910c-f94dccf429df.png)
+6.	Pada halaman ini user dapat memasukkan scenario sesuai data use case specification (tutorial pengisian skenario dijelaskan di sub bab selanjutnya)
+![addscenario](https://user-images.githubusercontent.com/78306501/124612538-9ae69800-de9c-11eb-856b-f2c34f6e03bc.PNG)
+(Contoh scenario yang telah diisi)
+![scenario](https://user-images.githubusercontent.com/67141922/124757282-9af79e00-df57-11eb-8d30-513290520572.png)
 7. Kemudian, kembali pada halaman "Project List" dan klik "Generate" untuk melihat hasilnya
-![hasil](https://user-images.githubusercontent.com/78306501/124613729-be5e1280-de9d-11eb-9c16-722914bec570.PNG)
+![hasil](https://user-images.githubusercontent.com/67141922/124757308-a1861580-df57-11eb-9d55-b98c328747a7.png)
+![bpmn](https://user-images.githubusercontent.com/67141922/124757315-a34fd900-df57-11eb-83f1-69e976599a21.png)
+8.	Hasil semua generate BPMN akan tersimpan pada menu navbar “BPMN List”
+![bpmn list](https://user-images.githubusercontent.com/67141922/124757334-a945ba00-df57-11eb-88fd-6b6a1fc4d63b.png)
+
 
 ### Petunjuk Pengisian Scenario
 Sebagai contoh akan digunakan project "Student Applies For Thesis"
