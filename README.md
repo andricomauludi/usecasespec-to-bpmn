@@ -140,24 +140,26 @@ Sebelum masuk ke tutorial, berikut hal-hal yang perlu diperhatikan pada tabel pe
 5.	ID scenario 3 serupa dengan ID scenario 1, isi scenario dengan “mengganti profile yang diinginkan”
 ![3](https://user-images.githubusercontent.com/67141922/124759387-c8dde200-df59-11eb-8933-09ad74326b4c.png)
 6.	Pada data use case specification, terdapat tanda bahwa scenario ID scenario 3 memiliki alternative flows, maka dari itu, sebelum lanjut ke langkah selanjutnya kita perlu mendefinisikan alternative flows yang dilalui.
+
 ![3 1](https://user-images.githubusercontent.com/67141922/124759398-caa7a580-df59-11eb-81f0-2074703e92fc.png)
+
 7.	Untuk membuat conditional scenario, kita hanya perlu memilih "Conditional" scenariotype pada form
 ![3 2](https://user-images.githubusercontent.com/67141922/124761250-cd0aff00-df5b-11eb-89be-5ed57c3f6a1a.png)
 8.	Sehingga, ID scenario 4 adalah conditional scenario berupa kalimat pertanyan "Apakah Actor memasukkan field yang diperlukan dengan tepat?"
-![4](https://user-images.githubusercontent.com/67141922/124759435-d2ffe080-df59-11eb-96f8-e4d47b773890.png)
+![4](https://user-images.githubusercontent.com/67141922/124776978-16624b00-df6a-11eb-9812-b9083be860ff.png)
 9.	Setelah conditional scenario, pasti ada dua cabang jalur scenario yaitu jawaban "Yes" atau "No".
 10.	ID scenario 5 mendefinisikan jalur ke arah Jawaban "Yes" dari pertanyaan ID scenario ke 4
-![5](https://user-images.githubusercontent.com/67141922/124759442-d5623a80-df59-11eb-8294-f4b63faa6def.png)
+![5](https://user-images.githubusercontent.com/67141922/124776987-17937800-df6a-11eb-9423-72f542de8d84.png)
 11.	ID scenario 6 mendefinisikan scenario yang dilanjutkan dari jawaban "Yes", yaitu “profile berhasil terganti dan tersimpan ke dalam database”
-![6](https://user-images.githubusercontent.com/67141922/124759446-d6936780-df59-11eb-8cf9-4496b31d4c85.png)
+![6](https://user-images.githubusercontent.com/67141922/124776995-195d3b80-df6a-11eb-87c2-61cf5aad4f83.png)
 12.	Sementara itu, ID scenario 7 mendefinisikan jalur ke arah Jawaban "No" dari pertanyaan ID scenario ke 4
-![7](https://user-images.githubusercontent.com/67141922/124759468-db581b80-df59-11eb-9c14-21b7405e8bd7.png)
+![7](https://user-images.githubusercontent.com/67141922/124777002-19f5d200-df6a-11eb-804b-3586e14ab81a.png)
 13.	ID scenario 8 mendefinisikan scenario yang dilanjutkan dari jawaban "No", yaitu “sistem memberikan peringatan keada actor”
-![8](https://user-images.githubusercontent.com/67141922/124759469-db581b80-df59-11eb-97f4-a207b0bcd1d5.png)
+![8](https://user-images.githubusercontent.com/67141922/124777008-1b26ff00-df6a-11eb-98ba-42fc194d25ed.png)
 14.	ID scenario 9 kembali melanjutkan scenario dari jawaban "No", yaitu “sistem akan mempersilahkan aktor untuk mengisi field dengan tepat”
-![9](https://user-images.githubusercontent.com/67141922/124759480-de530c00-df59-11eb-8120-735bf25130bd.png)
+![9](https://user-images.githubusercontent.com/67141922/124777024-1cf0c280-df6a-11eb-8a93-e069db761617.png)
 15.	Sebelum proses diakhiri dengan end event, dalam BPMN perlu menyediakan satu task penghubung antara kedua jalur "Yes" dan "No", yaitu ID scenario 10 yang menyatakan “End of the process”
-![10](https://user-images.githubusercontent.com/67141922/124760467-faa37880-df5a-11eb-9479-0fc0a3153212.png)
+![10](https://user-images.githubusercontent.com/67141922/124777041-1eba8600-df6a-11eb-95c7-83b0f387c412.png)
 17.	Hasil generatenya adalah seperti berikut
 
 ![bpmn2](https://user-images.githubusercontent.com/67141922/124759515-e743dd80-df59-11eb-8a18-38fcfca71ec8.png)
@@ -177,7 +179,7 @@ Anggota pada proyek pengerjaan aplikasi *Use Case Specification Generator* terdi
 ### Manajemen Proyek
 Dalam pelaksanaan proyek, digunakan pengelolaan proyek berbasis Agile yaitu SCRUM.
 - Link pengaturan Sprint Board : [Trello Board](https://trello.com/b/yajsJQGM/usepec-to-bpmn)
-- Link hasil tester dataset : [Dataset Result](https://drive.google.com/file/d/1DgQO7LENr08Ky3M-HFDzjiKq6Id2zIOa/view?usp=sharing)
+- Link hasil tester dataset : [Dataset Result](https://drive.google.com/file/d/1wd1QIzrmChM0YwXYnG5mf-fQaUhE-mR1/view?usp=sharing)
 
 ### Tanggal Rilis 
 Tanggal 9 Juli 2021
