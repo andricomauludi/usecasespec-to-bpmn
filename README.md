@@ -141,7 +141,7 @@ Sebelum masuk ke tutorial, berikut hal-hal yang perlu diperhatikan pada tabel pe
 ![3](https://user-images.githubusercontent.com/67141922/124759387-c8dde200-df59-11eb-8933-09ad74326b4c.png)
 6.	Pada data use case specification, terdapat tanda bahwa scenario ID scenario 3 memiliki alternative flows, maka dari itu, sebelum lanjut ke langkah selanjutnya kita perlu mendefinisikan alternative flows yang dilalui.
 
-![3 1](https://user-images.githubusercontent.com/67141922/124759398-caa7a580-df59-11eb-81f0-2074703e92fc.png)
+![3 1](https://user-images.githubusercontent.com/67141922/124778311-16167f80-df6b-11eb-812e-40ebd1c2b2b6.png)
 
 7.	Untuk membuat conditional scenario, kita hanya perlu memilih "Conditional" scenariotype pada form
 ![3 2](https://user-images.githubusercontent.com/67141922/124761250-cd0aff00-df5b-11eb-89be-5ed57c3f6a1a.png)
