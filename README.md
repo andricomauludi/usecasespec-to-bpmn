@@ -109,7 +109,7 @@ Petunjuk mengenai prosedur penggunaan aplikasi dapat dilihat pada bagian di bawa
 5.	Lalu untuk menambahkan scenario pada use case kembali ke halaman Project List dan klik "Scenario"
 ![projectlist](https://user-images.githubusercontent.com/67141922/124757246-916e3600-df57-11eb-910c-f94dccf429df.png)
 6.	Pada halaman ini user dapat memasukkan scenario sesuai data use case specification (tutorial pengisian skenario dijelaskan di sub bab selanjutnya)
-![addscenario](https://user-images.githubusercontent.com/78306501/124612538-9ae69800-de9c-11eb-856b-f2c34f6e03bc.PNG)
+![addscenario](https://user-images.githubusercontent.com/67141922/124758432-c929ad80-df58-11eb-86ea-a1a18119a8ff.png)
 (Contoh scenario yang telah diisi)
 ![scenario](https://user-images.githubusercontent.com/67141922/124757282-9af79e00-df57-11eb-8d30-513290520572.png)
 7. Kemudian, kembali pada halaman "Project List" dan klik "Generate" untuk melihat hasilnya
@@ -120,24 +120,45 @@ Petunjuk mengenai prosedur penggunaan aplikasi dapat dilihat pada bagian di bawa
 
 
 ### Petunjuk Pengisian Scenario
-Sebagai contoh akan digunakan project "Student Applies For Thesis"
-![scenario](https://user-images.githubusercontent.com/78306501/124612538-9ae69800-de9c-11eb-856b-f2c34f6e03bc.PNG)
-Dimana hasil generatenya adalah seperti berikut :
-![hasil](https://user-images.githubusercontent.com/78306501/124613729-be5e1280-de9d-11eb-9c16-722914bec570.PNG)
+Sebagai contoh, disini akan dilakukan pengisian scenario dari use case spesifikasi yang berjudul “Edit Profile”
+![input1](https://user-images.githubusercontent.com/67141922/124758659-fe360000-df58-11eb-85dd-29ecfc9f797d.png)
+![input2](https://user-images.githubusercontent.com/67141922/124758670-00985a00-df59-11eb-94a8-33d4ec428168.png)
 
-1. Untuk membuat task user dapat mengisi form scenario seperti dibawah
-![task](https://user-images.githubusercontent.com/78306501/124615703-b8693100-de9f-11eb-88c0-c2317be2a09a.PNG)
-User memilih project mana yang akan ditambahkan scenario, lalu mengisi ID (urut yang dimulai dari 1), lalu memilih scenario type "TASK" pada form "scenariotype", tidak mengisi form "postscenarioidyes" dan "postscenarioidno", dan terakhir mengisi deskripsi task.
-2. Untuk membuat conditional
-![conditional](https://user-images.githubusercontent.com/78306501/124616666-7a204180-dea0-11eb-93fc-14485f602f3c.PNG)
-User memilih project mana yang akan ditambahkan scenario, lalu mengisi ID (urut yang dimulai dari 1), lalu memilih scenario type "CONDITIONAL" pada form "scenariotype", tidak mengisi form "postscenarioidyes" dan "postscenarioidno", dan terakhir mengisi deskripsi conditional dengan kalimat tanya. Namun task setelahnya dapat dibuat dengan pengisian form seperti berikut:
-![conditional2](https://user-images.githubusercontent.com/78306501/124617238-f87ce380-dea0-11eb-839e-377b0822c472.png)
-Dimana ID 3 dan 4 adalah hasil dari kondisi "Form Fill Correctly" yang telah didefinisikan pada ID 3 dan hasilnya adalah task ID 4 yaitu "Systemacknowledges receipt of data on screen and by e-mail". Lalu ID 5 dan 6 adalah hasil dari kondisi "Wrong answer" yang telah didefinisikan pada ID 5 dan hasilnya adalah task ID 6 yaitu "Form is not filled out completely".
-3. Namun untuk kasus seperti berikut :
-![kasus2](https://user-images.githubusercontent.com/78306501/124618196-ca4bd380-dea1-11eb-8592-2eddab3c3347.PNG)
+Sebelum masuk ke tutorial, berikut hal-hal yang perlu diperhatikan pada tabel pengisian scenario:
+- Tiap skenario diberi nomor ID sesuai urutannya.
+- Ada dua skenario, yaitu Task dan Conditional. **Task Scenario** adalah **Basic Flows**, sedangkan **Conditional Scenario** digunakan untuk mendefinisikan adanya **Alternative Flows**, yang akan ditampilkan dalam notasi "Gateway" pada BPMN.
+- Scenario ID Yes dan Scenario ID No, digunakan untuk menentukan jalur dari skenario yang berasal dari Gateway
 
-Perlu diberikan task "Selsai" untuk menyatukan cabang kondisi yang telah dibuat sebelum end. Berikut scenarionya :
-![hasilkasus2](https://user-images.githubusercontent.com/78306501/124618447-fe26f900-dea1-11eb-8537-f391e07a6fe8.PNG)
+
+1.	User memilih nama project yang akan ditambahkan scenario.
+2.	Isi ID scenario (urut dimulai dari 1), lalu memilih scenario type "TASK" pada form "scenariotype".
+![scenario task](https://user-images.githubusercontent.com/67141922/124758831-2cb3db00-df59-11eb-8527-1b7380c8f23f.png)
+3.	Pada ID scenario 1 tidak perlu mengisi "postscenarioidyes" dan "postscenarioidno", langsung isikan deskripsi scenario “memilih menu edit”
+![1](https://user-images.githubusercontent.com/67141922/124759356-c24f6a80-df59-11eb-9339-a159df269cad.png)
+4.	ID scenario 2 serupa dengan ID scenario 1, isi scenario dengan “sistem menampilkan field untuk mengganti profile”
+![2](https://user-images.githubusercontent.com/67141922/124759369-c4b1c480-df59-11eb-8406-541f008cecc4.png)
+5.	ID scenario 3 serupa dengan ID scenario 1, isi scenario dengan “mengganti profile yang diinginkan”
+![3](https://user-images.githubusercontent.com/67141922/124759387-c8dde200-df59-11eb-8933-09ad74326b4c.png)
+6.	Pada data use case specification, terdapat tanda bahwa scenario ID scenario 3 memiliki alternative flows, maka dari itu, sebelum lanjut ke langkah selanjutnya kita perlu mendefinisikan alternative flows yang dilalui.
+![3 1](https://user-images.githubusercontent.com/67141922/124759398-caa7a580-df59-11eb-81f0-2074703e92fc.png)
+7.	Untuk membuat conditional scenario, kita hanya perlu mengubah scenariotpe pada form
+![3 2](https://user-images.githubusercontent.com/67141922/124759410-cda29600-df59-11eb-8d31-e56b01a16874.png)
+8.	Sehingga, ID scenario 4 adalah conditional scenario berupa kalimat pertanyan "Apakah Actor memasukkan field yang diperlukan dengan tepat?"
+![4](https://user-images.githubusercontent.com/67141922/124759435-d2ffe080-df59-11eb-96f8-e4d47b773890.png)
+9.	Setelah conditional scenario, pasti ada dua cabang jalur scenario yaitu jawaban "Yes" atau "No".
+10.	ID scenario 5 mendefinisikan jalur ke arah Jawaban "Yes" dari pertanyaan ID scenario ke 4
+![5](https://user-images.githubusercontent.com/67141922/124759442-d5623a80-df59-11eb-8294-f4b63faa6def.png)
+11.	ID scenario 6 mendefinisikan scenario yang dilanjutkan dari jawaban "Yes", yaitu “profile berhasil terganti dan tersimpan ke dalam database”
+![6](https://user-images.githubusercontent.com/67141922/124759446-d6936780-df59-11eb-8cf9-4496b31d4c85.png)
+12.	Sementara itu, ID scenario 7 mendefinisikan jalur ke arah Jawaban "No" dari pertanyaan ID scenario ke 4
+![7](https://user-images.githubusercontent.com/67141922/124759468-db581b80-df59-11eb-9c14-21b7405e8bd7.png)
+13.	ID scenario 8 mendefinisikan scenario yang dilanjutkan dari jawaban "No", yaitu “sistem memberikan peringatan keada actor”
+![8](https://user-images.githubusercontent.com/67141922/124759469-db581b80-df59-11eb-97f4-a207b0bcd1d5.png)
+14.	ID scenario 9 kembali melanjutkan scenario dari jawaban "No", yaitu “sistem akan mempersilahkan aktor untuk mengisi field dengan tepat”
+![9](https://user-images.githubusercontent.com/67141922/124759480-de530c00-df59-11eb-8120-735bf25130bd.png)
+15.	Sebelum proses diakhiri dengan end event, dalam BPMN perlu menyediakan satu task penghubung antara kedua jalur "Yes" dan "No", yaitu ID scenario 10 yang menyatakan “End of the process”
+16.	Hasil generatenya adalah seperti berikut
+![bpmn2](https://user-images.githubusercontent.com/67141922/124759515-e743dd80-df59-11eb-8a18-38fcfca71ec8.png)
 
 
 # Informasi Lainnya
