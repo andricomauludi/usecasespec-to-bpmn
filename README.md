@@ -53,38 +53,48 @@ Aplikasi Use Case Specification Generator dibangun dengan memanfaatkan *software
 
 # Petunjuk Instalasi 
 Petunjuk mengenai prosedur instalasi untuk aplikasi dilakukan pada sesi terminal, berikut prosedur yang dapat dilakukan :
-1. Lakukan *clone* pada repositori
+1. Download dan install XAMPP
+   ```sh
+   https://www.apachefriends.org/index.html
+   ```
+2. Lakukan *clone* atau download secara manual aplikasi UseCaseSpecToBPMN dari repository GitHub. Simpan ke dalam folder XAMPP/htdocs/
    ```sh
    git clone https://github.com/AgileRE-2021/UseCaseSpecToBPMN.git
    ```
-2. Membuat *virtual environment* pada *python*
+3. Buka CMD dan masuk ke folder aplikasi
    ```sh
-   py -m venv env
+   cd xampp\htdocs\UseCaseSpecToBPMN\UseCaseSpecToBPMN
    ```
-3. Masuk ke dalam *virtual environment* 
+4. Masuk ke dalam *virtual environment* 
    ```sh
-   venv\Scripts\activate.bat
+   env\Scripts\activate
    ```
-4. Lakukan instalasi *Django Framework*
+5. Lakukan instalasi *Django Framework*
    ```sh
    py -m pip install Django
    ```
-5. Masuk ke dalam folder aplikasi CDG
-   ```sh
-   cd UseCaseSpecToBPMN
-   ```
-6. Lakukan instalasi *Bootstrap Framework* 
-   ```sh
-   pip install django-bootstrap-v5
-   ```
-7. Lakukan instalasi MySQL dengan mengikuti link video dibawah
+6. Lakukan instalasi MySQLClient dengan mengikuti link video dibawah
    ```sh
    https://youtu.be/jo9jZ1GKFmw
    ```
-8. Jalankan aplikasi pada *localhost*
+7. Nyalakan Server Apache dan MySQL melalui aplikasi XAMPP
+8. Buat sebuah database baru bernama django
+9. Lakukan migrasi pada database
+   ```sh
+   python manage.py makemigrations
+   ```
+   ```sh
+   python manage.py migrate
+   ```
+10. Jalankan aplikasi pada *localhost*
    ```sh
    py manage.py runserver
    ```
+11. Akses Aplikasi melalui browser
+   ```sh
+   http://127.0.0.1:8000/
+   ```
+   
 # Penjelasan Penggunaan
 Petunjuk mengenai prosedur penggunaan aplikasi dapat dilihat pada bagian di bawah ini :
 1. Pertama, sistem akan menampilkan halaman login, dimana sebelumnya user harus melakukan sign up akun
