@@ -140,7 +140,6 @@ Sebelum masuk ke tutorial, berikut hal-hal yang perlu diperhatikan pada tabel pe
 5.	ID scenario 3 serupa dengan ID scenario 1, isi scenario dengan “mengganti profile yang diinginkan”
 ![3](https://user-images.githubusercontent.com/67141922/124759387-c8dde200-df59-11eb-8933-09ad74326b4c.png)
 6.	Pada data use case specification, terdapat tanda bahwa scenario ID scenario 3 memiliki alternative flows, maka dari itu, sebelum lanjut ke langkah selanjutnya kita perlu mendefinisikan alternative flows yang dilalui.
-
 ![3 1](https://user-images.githubusercontent.com/67141922/124759398-caa7a580-df59-11eb-81f0-2074703e92fc.png)
 7.	Untuk membuat conditional scenario, kita hanya perlu memilih "Conditional" scenariotype pada form
 ![3 2](https://user-images.githubusercontent.com/67141922/124761250-cd0aff00-df5b-11eb-89be-5ed57c3f6a1a.png)
@@ -160,6 +159,7 @@ Sebelum masuk ke tutorial, berikut hal-hal yang perlu diperhatikan pada tabel pe
 15.	Sebelum proses diakhiri dengan end event, dalam BPMN perlu menyediakan satu task penghubung antara kedua jalur "Yes" dan "No", yaitu ID scenario 10 yang menyatakan “End of the process”
 ![10](https://user-images.githubusercontent.com/67141922/124760467-faa37880-df5a-11eb-9479-0fc0a3153212.png)
 17.	Hasil generatenya adalah seperti berikut
+
 ![bpmn2](https://user-images.githubusercontent.com/67141922/124759515-e743dd80-df59-11eb-8a18-38fcfca71ec8.png)
 
 
