@@ -166,6 +166,12 @@ Sebelum masuk ke tutorial, berikut hal-hal yang perlu diperhatikan pada tabel pe
 
 
 # Informasi Lainnya
+### Manajemen Proyek
+Dalam pelaksanaan proyek, digunakan pengelolaan proyek berbasis Agile yaitu SCRUM.
+- Link pengaturan Sprint Board : [Trello Board](https://trello.com/b/yajsJQGM/usepec-to-bpmn)
+- Link hasil tester dataset : [Dataset Result](https://drive.google.com/file/d/1wd1QIzrmChM0YwXYnG5mf-fQaUhE-mR1/view?usp=sharing)
+- Akun demo : Username = admin, password = admin
+
 ### Anggota Proyek
 Anggota pada proyek pengerjaan aplikasi *Use Case Specification Generator* terdiri dari 7 orang, meliputi :
 1. Intan Noer Fatimah
@@ -175,11 +181,6 @@ Anggota pada proyek pengerjaan aplikasi *Use Case Specification Generator* terdi
 5. Andrico Mauludi Junianto
 6. Muhammad Raihan Nady K.
 7. Albert Samuel Pangihutan
-
-### Manajemen Proyek
-Dalam pelaksanaan proyek, digunakan pengelolaan proyek berbasis Agile yaitu SCRUM.
-- Link pengaturan Sprint Board : [Trello Board](https://trello.com/b/yajsJQGM/usepec-to-bpmn)
-- Link hasil tester dataset : [Dataset Result](https://drive.google.com/file/d/1wd1QIzrmChM0YwXYnG5mf-fQaUhE-mR1/view?usp=sharing)
 
 ### Tanggal Rilis 
 Tanggal 9 Juli 2021
