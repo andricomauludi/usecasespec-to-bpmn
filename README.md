@@ -166,11 +166,11 @@ Sebelum masuk ke tutorial, berikut hal-hal yang perlu diperhatikan pada tabel pe
 
 
 # Informasi Lainnya
-### Manajemen Proyek
-Dalam pelaksanaan proyek, digunakan pengelolaan proyek berbasis Agile yaitu SCRUM.
-- Link pengaturan Sprint Board : [Trello Board](https://trello.com/b/yajsJQGM/usepec-to-bpmn)
-- Link hasil tester dataset : [Dataset Result](https://drive.google.com/file/d/1wd1QIzrmChM0YwXYnG5mf-fQaUhE-mR1/view?usp=sharing)
-- Akun demo : Username = admin, password = admin
+### Link
+- Link pengaturan Sprint Board (Scrum  Management Project): [Trello Board](https://trello.com/b/yajsJQGM/usepec-to-bpmn)
+- Link hasil tester dataset : [Dataset Pengujian](https://drive.google.com/file/d/1wd1QIzrmChM0YwXYnG5mf-fQaUhE-mR1/view?usp=sharing)
+- Akun demo sistem : Username = admin, password = admin
+- Link video penjelasan sistem : [Video Penjelasan](https://drive.google.com/file/d/1l9VFg_Bm1iFgNrilZ5kRM7MqZB2SVSR_/view?usp=sharing)
 
 ### Anggota Proyek
 Anggota pada proyek pengerjaan aplikasi *Use Case Specification Generator* terdiri dari 7 orang, meliputi :
